@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css"
 		href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+	<script defer="functions.js"></script>
 
 </head>
 
@@ -203,17 +204,17 @@
 			</script> -->
 			<div class="form-body">
 				<h3 class="form-heading">Contact Me</h3>
-				<form class="contact-form" ,name="myForm" action="/functions.js" onsubmit="return validateForm()"
+				<form class="contact-form" id="myForm" action="/functions.js" onsubmit="return validateForm()"
 					method="post">
 					<div>
 						<label for="fname">Email:</label><br>
-						<input type="email"  name="Email"><br>
+						<input id="email" type="email"  name="Email" required><br>
 					</div>
 
 					<div>
 						<label for="lname">Message:</label><br>
 					
-						<textarea id="lname" name="Message" cols="30" rows="10"></textarea>
+						<textarea id="message" name="Message" cols="30" rows="10"></textarea>
 					</div>
 
 				</form>
